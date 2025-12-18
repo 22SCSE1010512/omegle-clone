@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Omegle Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Talk to Strangers</h2>
+    <p id="status">Waiting for stranger...</p>
+
+    <div class="video-box">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+
+    <div id="chatBox"></div>
+
+    <div class="controls">
+        <input type="text" id="messageInput" placeholder="Type message..." disabled>
+        <button id="sendBtn">Send</button>
+        <button id="nextBtn">Next</button>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
